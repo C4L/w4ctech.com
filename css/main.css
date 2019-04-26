@@ -1,0 +1,271 @@
+.container{position:absolute; width:100%; height:100%; overflow:hidden; background:#58a;}
+.content{width:100%; overflow:hidden; position:relative;}
+.nav{position:fixed; right:80px; top:50%; z-index:999; margin-top:-144px;}
+.nav li{width:30px; height:30px; overflow:hidden; border-radius:50%; cursor:pointer; box-shadow:0 0 4px 3px #fff; *border:1px solid #fff; background:url("../images/icon.png")/*tpa=https://www.w4ctech.com/images/icon.png*/ no-repeat 0 0; transform-origin:50% -42px;}
+.nav li#sentence{background-position:0 -30px;}
+.nav li#news{background-position:0 -60px;}
+.nav li#flower{background-position:0 -90px; animation:swing 8s infinite;}
+.nav .highlight{box-shadow:0 0 4px 3px #9cfffd; /*color:#6dcbcd; */background-color:#fff; *border-color:#9cfffd; background-position:-30px 0;}
+.nav li#sentence.highlight{background-position:-30px -30px;}
+.nav li#news.highlight{background-position:-30px -60px;}
+.nav li#flower.highlight{background-position:-30px -90px;}
+.nav li#flower:hover{animation-play-state:paused;}
+.nav i{display:block; height:37px; width:0px; margin:5px 0 5px 14px; border-right:2px dashed #fff; transform-origin:1px 0px;}
+.nav #news + i{animation:swing 8s infinite;}
+.nav li span, .nav li i{display:none;}
+.wrapper{width:100%; height:100%; position:relative; transition:all 0.5s ease;}
+.wrapper section{width:100%; height:100%; position:relative; overflow:hidden;}
+/*主页模块*/
+.home{background: url("http://www.w4ctech.com/images/love.jpg");background-repeat: no-repeat;background-position: 0px 0px;background-size: 100% 100%;}
+.theme{width:140px; height:140px; border-radius:50%; position:absolute; top:22%; left:50%; margin-left:-70px; overflow:hidden; border:2px solid #fff; margin-left:-71px;}
+.theme img{width:100%;}
+.slogan{width:640px; text-align:center; font:32px/1.5 "微软雅黑"; color:#fff; position:absolute; top:calc(22% + 170px); left:50%; margin-left:-320px; overflow:hidden; }
+.slogan p{font-size:16px; margin-bottom:10px; opacity:0.5}
+.slogan div{width:100%; overflow:hidden;}
+.slogan .slogan-en{font-size:16px; margin-top:3px;}
+.slogan a{color:#fff; text-decoration:none; display:block; width:100%; white-space:nowrap; text-overflow:ellipsis; overflow:hidden; text-align:left;}
+.slogan .author{float:right;}
+.slogan .time{margin-right:15px;}
+.slogan .time strong{font-size:26px;}
+.todaylink{position:absolute; width:100%; height:100%; left:0; top:0; cursor:default;}
+
+/*句子模块*/
+.sentence{background:#feebd0;}
+.sentence .content{width:1100px; left:50%; margin-left:-550px; background:#fef2e1;}
+.sentence .pages{width:100%; margin-top:30px; overflow:hidden; height:728px;}
+.sentence .imgtxt{width:250px; float:left; background:#fff; overflow:hidden; margin-left:20px; margin:10px 0 10px 20px; transition:all 0.5s ease; position:relative;}
+.sentence .imgtxt a{position:absolute; left:0; top:0; width:100%; height:100%;}
+.sentence .image{width:230px; /*height:172px;*/ margin:10px; overflow:hidden;}
+.sentence .image img{width:100%; display:block; transition:all 0.5s ease-in;}
+.sentence .imgtxt:hover img{transform:scale(1.1);}
+.sentence .text{width:230px; margin-left:10px; padding-bottom:10px;}
+.sentence .text p{color:#666; font:16px/1.5 "微软雅黑"; width:100%; height:24px; overflow:hidden; white-space:nowrap; text-overflow:ellipsis;}
+.sentence .text .txt{margin-bottom:5px; height:96px; white-space:normal;}
+.sentence .text .platform, .sentence .text .author{font-size:12px; text-align:right;}
+.sentence .tags{position:absolute; left:10px; bottom:15px;}
+.sentence .tags span{font:12px/14px "微软雅黑"; left:10px; margin-right:5px; border:1px solid #58a; padding:0 3px; color:#58a; border-radius:3px;}
+.sentence .tags .new{color:#52cd51; border-color:#52cd51;}
+.sentence .tags .hot{color:#f60; border-color:#f60;}
+.sentence .tags i{display:inline-block; width:18px; height:18px; background:url("../images/share.png")/*tpa=https://www.w4ctech.com/images/share.png*/ no-repeat 0 0; vertical-align:-4px; margin-left:4px;}
+.sentence .imgtxt:hover{box-shadow:0 0 10px 2px #666; background:#d4f6f0;}
+.sentence .pagenav{position:relative; float:left; left:50%; top:30px;}
+.sentence .pagenav li{position:relative; float:left; right:50%; width:100px; text-align:center; background:#feebd0; font:16px/30px "微软雅黑"; height:30px; overflow:hidden; margin-right:20px; cursor:pointer; color:#666; border:1px solid #fff; box-shadow:0 0 5px 1px #555;}
+.sentence .pagenav li:last-child{margin-right:0;}
+.sentence .pagenav .btn:hover{background:#e3fed0;}
+.sentence .pagenav #countpage{cursor:default;}
+
+/*新闻模块*/
+.news{background:#58a;}
+.yellow{width:320px; height:470px; overflow:hidden; margin:0 auto;  position:relative;}
+.body{width:180px; margin:80px auto; height:290px; border:4px solid #000; border-radius:87px; background:yellow; position:relative; overflow:hidden; z-index:3;}
+.eye{position:absolute; top:43px; left:0; width:100%; height:70px; overflow:hidden;}
+.eye .frame{width:1300px; height:1300px; position:absolute; left:50%; margin-left:-650px; bottom:26px; border:10px solid #000; border-radius:50%;}
+.eye .eg1,.eye .eg2{width:62px; height:62px; border-radius:50%; border:4px solid #000; background:#fff; position:relative; float:left; overflow:hidden;}
+.eye .eg1{margin-left:20px;}
+.eye .e{width:30px; height:30px; border-radius:50%; background:#000; position:absolute; top:17px; left:16px; animation:eye 4.7s infinite linear; -webkit-animation:eye 4.7s infinite linear;}
+.eye .e div{width:14px; height:14px; background:#fff; border-radius:50%; margin-left:8px; margin-top:8px; animation:e 4.7s infinite; -webkit-animation:e 4.7s infinite;}
+.mouth{width:50px; height:10px; background:#fff; border:3px solid #000;  border-radius:0 0 13px 13px; position:absolute; left:50%; margin-left:-28px; top:132px; overflow:hidden;}
+.cloth{width:100%; height:116px; position:absolute; bottom:0; left:0; border-top:4px solid #000; background:#58a;}
+.cloth .side{width:24px; background:yellow; height:40px; position:absolute; top:-4px; left:0; border-bottom:4px solid #000; border-right:4px solid #000;}
+.cloth .rside{left:auto; right:0; border-left:4px solid #000; border-right:none;}
+.cloth .pocket{width:52px; height:34px; border:4px solid #000; position:absolute; left:50%; margin-left:-30px; top:26px; border-radius:0 0 20px 20px;}
+.cloth .suspenders{width:10px; height:80px; border:4px solid #000; background:#58a; position:absolute; left:34px; top:-72px; transform:rotate(-50deg); transform-origin:50% 100%; -webkit-transform:rotate(-50deg); -webkit-transform-origin:50% 100%;}
+.cloth .sus2{left:auto; right:34px; transform:rotate(50deg);}
+.cloth .suspenders div{position:absolute; bottom:3px; width:5px; height:5px; border-radius:50%; left:3px; background:#000;}
+.cloth .cline{width:4px; height:28px; position:absolute; bottom:0; left:50%; margin-left:-2px; background:#000; border-radius:2px 2px 0 0;}
+.cloth .lline, .cloth .rline{width:44px; height:14px; border:4px solid #000; border-top:none; border-radius:0 0 22px 22px; position:absolute; top:45px; left:-24px;}
+.cloth .rline{left:auto; right:-24px;}
+.footer{position:absolute; top:370px; left:0; width:100%; z-index:2;}
+.footer .ff{width:70px; position:absolute; left:50%; margin-left:-73px;}
+.footer .lf{transform-origin:100% 7px; animation:lfooter 1.5s infinite; -webkit-transform-origin:100% 7px; -webkit-animation:lfooter 1.5s infinite;}
+.footer .rf{margin-left:3px; transform-origin:0 7px; animation:rfooter 1.5s infinit; -webkit-animation:rfooter 1.5s ease infinite;}
+.footer .ff .leg{width:20px; background:#000; height:20px; position:absolute; right:0; top:0;}
+.footer .rf .leg{left:0;}
+.footer .f{width:50px; background:#000; height:24px; position:absolute; top:17px; right:0; border-radius:18px 0 8px 12px;}
+.footer .rf .f{left:0; border-radius:0 18px 12px 8px;}
+.footer .lf .f{transform-origin:100% 0; -webkit-transform-origin:100% 0;}
+.shadow{width:170px; height:8px; background:#ccc; border-radius:50%; position:absolute; left:50%; margin-left:-85px; top:408px;}
+.arm{position:absolute; width:260px; top:247px; left:50%; margin-left:-130px; height:50px;}
+.arm .a{width:46px; height:46px; background:yellow; border:4px solid #000; border-radius:10px; position:absolute; left:0; top:0; transform:rotate(-40deg); -webkit-transform:rotate(-40deg); transform-origin:34px 2px; -webkit-transform-origin:34px 2px;}
+.arm .ra{left:auto; right:0px; transform-origin:16px 2px; -webkit-transform-origin:16px 2px; transform:rotate(40deg); -webkit-transform:rotate(40deg);}
+.arm .la{animation:larm 1.5s infinite; -weibkit-animation:larm 1.5s infinite;}
+.arm .ra{animation:rarm 1.5s infinite; -weibkit-animation:rarm 1.5s infinite;}
+.arm .a div{width:4px; height:10px; background:#000; border-radius:2px; position:absolute; top:12px; left:15px; transform:rotate(90deg); -webkit-transform:rotate(90deg)}
+.arm .ra div{left:auto; right:15px; top:12px; transform:rotate(-90deg); -webkit-transform:rotate(-90deg);}
+.hair{position:absolute; width:180px; left:50%; margin-left:-90px; background:pink; top:30px; z-index:1;}
+.hair .h{border-radius:50% 50% 0 0; border-top:6px solid #000; height:80px; width:80px; position:absolute; transform:rotate(35deg); -webkit-transform:rotate(35deg);}
+.hair .h1{top:40px; left:50%; margin-left:-65px;}
+.hair .h2{width:110px; height:110px; z-index:-1; top:46px; left:50%; margin-left:-50px; transform:rotate(40deg); animation:hair 2s infinite; transform-origin:50% 0; -webkit-transform:rotate(40deg); -webkit-animation:hair 2s infinite; -webkit-transform-origin:50% 0;}
+.yellow p{width:100%; text-align:center; color:#fff; margin-top:-30px;} 
+@keyframes hair{
+  0%{transform:rotate(40deg);}
+  50%{transform:rotate(45deg);}
+  100%{transform:rotate(40deg);}
+}
+@keyframes eye{
+  0%{transform:translateX(0);}
+  7%{transform:translateX(0);}
+  25%{transform:translateX(10px);}
+  50%{transform:translateX(0);}
+  57%{transform:translateX(0);}
+  75%{transform:translateX(-10px);}
+  100%{transform:translateX(0);}
+}
+@keyframes e{
+  0%{transform:translate(5px,-3px);}
+  7%{transform:translate(5px,-3px);}
+  25%{transform:translate(6px,0);}
+  50%{transform:translate(0);}
+  57%{transform:translate(0);}
+  75%{transform:translate(-6px,0);}
+  100%{transform:translate(5px,-3px);}
+}
+@keyframes lfooter{
+  0%,50%,100%{transform:rotate(0);}
+  80%{transform:rotate(8deg);}
+}
+@keyframes rfooter{
+  0%,50%,100%{transform:rotate(0);}
+  30%{transform:rotate(-8deg);}
+}
+@keyframes larm{
+  0%,50%,100%{transform:rotate(-40deg);}
+  30%{transform:rotate(-44deg);}
+}
+@keyframes rarm{
+  0%,50%,100%{transform:rotate(40deg);}
+  80%{transform:rotate(44deg);}
+}
+@-webkit-keyframes hair{
+  0%{-webkit-transform:rotate(40deg);}
+  50%{-webkit-transform:rotate(45deg);}
+  100%{-webkit-transform:rotate(40deg);}
+}
+@-webkit-keyframes eye{
+  0%{-webkit-transform:translateX(0);}
+  7%{-webkit-transform:translateX(0);}
+  25%{-webkit-transform:translateX(10px);}
+  50%{-webkit-transform:translateX(0);}
+  57%{-webkit-transform:translateX(0);}
+  75%{-webkit-transform:translateX(-10px);}
+  100%{-webkit-transform:translateX(0);}
+}
+@-webkit-keyframes e{
+  0%{-webkit-transform:translate(5px,-3px);}
+  7%{-webkit-transform:translate(5px,-3px);}
+  25%{-webkit-transform:translate(6px,0);}
+  50%{-webkit-transform:translate(0);}
+  57%{-webkit-transform:translate(0);}
+  75%{-webkit-transform:translate(-6px,0);}
+  100%{-webkit-transform:translate(5px,-3px);}
+}
+@-webkit-keyframes lfooter{
+  0%,50%,100%{-webkit-transform:rotate(0);}
+  80%{-webkit-transform:rotate(8deg);}
+}
+@-webkit-keyframes rfooter{
+  0%,50%,100%{-webkit-transform:rotate(0);}
+  30%{-webkit-transform:rotate(-8deg);}
+}
+@-webkit-keyframes larm{
+  0%,50%,100%{-webkit-transform:rotate(-40deg);}
+  30%{-webkit-transform:rotate(-44deg);}
+}
+@-webkit-keyframes rarm{
+  0%,50%,100%{-webkit-transform:rotate(40deg);}
+  80%{-webkit-transform:rotate(44deg);}
+}
+
+/*花花模块*/
+.flower{background:#44a08f/*#d4f6f0*/; text-align:center;}
+.flower .content{position:relative;}
+.flower .check{width:300px; position:absolute; left:50%; top:8%; margin-left:-150px;}
+.flower .form{width:155px; height:50px; border:1px solid #83c75d; overflow:hidden; margin:0 auto; background:#fff; cursor:pointer; position:relative;}
+.flower .form span{float:left; width:50px; height:40px;  border-left:1px solid #ccc; margin-top:5px; color:#83c75d; text-align:center; overflow:hidden;  font:26px/40px "微软雅黑";}
+.flower .check input{color:#fff; border:none; width:100%; height:100%; padding:0; background:none; position:absolute; top:-999px; left:0; z-index:-1;}
+.flower .check input:focus{outline:none;}
+.flower .check .one{border-left:none;}
+.flower .check p{font:14px/1.5 "微软雅黑"; color:#666; margin-top:10px;}
+.flower .check i{width:20px; color:#666; height:2px; background:#83c75d; position:absolute; left:15px; bottom:5px; display:none;}
+.flower .check .show{display:block; animation:breath 1s infinite;}
+@keyframes breath{
+  from{opacity:1;}
+  to{opacity:0;}
+}
+.flower #clock{width:100%; position:absolute; left:0; bottom:0;}
+.flower #tip{color:red; font-size:16px;}
+/*下雪*/
+.snow{display:none;}
+/*导航摇摆*/
+@keyframes swing{
+  25%{transform:rotate(25deg);}
+  75%{transform:rotate(-25deg);}
+}
+/*开发提示*/
+.develop{width:100%; text-align:center; font:40px/1.5 "微软雅黑"; position:absolute; top:40%; left:0;}
+
+@media screen and (max-width:1100px){
+  .sentence .content{width:100%; left:0; margin-left:0;}
+}
+@media screen and (max-width:640px){
+  html{font-size:28px;}
+  .wrapper{width:400%; overflow:hidden;}
+  .wrapper section{float:left; width:25%;}
+  .slogan{font-size:0.9rem; width:90%; left:5%; margin-left:auto;}
+  .slogan .slogan-en{font-size:0.65rem;}
+  /*句子模块*/
+  .sentence .pagenav{display:none;}
+  .sentence .pages{height:auto; margin-top:0; position:absolute; left:0; top:5px;}
+  .sentence .imgtxt{width:47%; margin-left:2%; margin-bottom:5px;}
+  .sentence .image{width:92%; margin:4%;}
+  .sentence .text{width:92%; margin-left:4%;}
+  .sentence #movetip{width:100%; font-size:18px; color:#bbb; text-align:center;}
+  /*导航*/
+  .nav{width:100%; top:auto; bottom:0; left:0; right:auto; background:rgba(255,255,255,0.9); height:40px; overflow:hidden; border-top:1px solid #aaa;}
+  .nav li{width:25%; float:left; height:100%; border-radius:0; *border:none; box-shadow:none; position:relative;}
+  .nav li{background:none;}
+  .nav li.highlight{background:none;}
+  .nav li#flower{animation:none;}
+  .nav i{display:none;}
+  .nav li i{display:block; margin:0; position:absolute; left:50%; width:20px; height:20px; margin-left:-10px; top:4px; background:url("../images/icon.png")/*tpa=https://www.w4ctech.com/images/icon.png*/ no-repeat 0 -120px; border:none;}
+  .nav li#home.highlight i{background-position:0 -140px;}
+  .nav li#sentence i{background-position:0 -160px;}
+  .nav li#sentence.highlight i{background-position:0 -180px;}
+  .nav li#news i{background-position:0 -200px;}
+  .nav li#news.highlight i{background-position:0 -220px;}
+  .nav li#flower i{background-position:0 -240px;}
+  .nav li#flower.highlight i{background-position:0 -260px;}
+  .nav .highlight{box-shadow:none;}
+  .nav li span{display:block; color:#666; font:10px/14px "微软雅黑"; position:absolute; bottom:2px; left:0; width:100%; text-align:center;}
+  .nav li.highlight span{color:#1aad19;}
+  /*花花*/
+  .flower .check{top:27%;}
+  .snow{display:block;}
+  .snow span{position:absolute; width:0px; height:0px; background:#fff; border-radius:50%; box-shadow:0 0 12px 4px #fff, 0 0 3px -1px #ccc; top:-30px; left:50px; }
+}
+@media screen and (max-width:480px){
+  html{font-size:21px;}
+  /*句子模块*/
+  .sentence .imgtxt{width:90%; margin-left:5%; margin:6px 0 6px 5%;}
+  .sentence .text .txt{height:auto;}
+}
+@media screen and (max-width:320px){
+  html{font-size:14px;}
+}
+#info{font-size: 20px;color: red;font-weight: 700}
+#img:hover{transform: rotate(360deg);transition: transform 2s;}
+#w4ctech_time{opacity: 1}
+@media (max-width: 860px){
+  .home {background-image: url("http://www.w4ctech.com/images/love.webp");}
+}
+
+
+
+
+
+
+
+
+
+
+

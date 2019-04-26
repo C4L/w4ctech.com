@@ -1,0 +1,58 @@
+body{background:#feebd0;}
+.wrapper{width:1100px; margin:0 auto; overflow:hidden; background:#fef2e1;}
+.imgtxt{width:640px; margin:0 auto; padding-top:30px; }
+.image{width:600px;  overflow:hidden; margin:0 auto; border:20px solid #fff; border-radius:10px;}
+.image img{width:100%; display:block;}
+.text{background:#fff; padding:20px 0; margin:0 auto; width:100%; overflow:hidden; position:relative;}
+.stn{width:580px; margin:0 auto; font:18px/1.5 "微软雅黑";}
+.platform, .author{width:580px; margin:10px auto 0; text-align:right; font:12px/1.5 "微软雅黑";}
+.platform{margin-top:18px;}
+.tags{position:absolute; bottom:19px; font:12px/14px "微软雅黑"; width:580px; left:50%; margin-left:-290px;}
+.tags span{color:#58a; border:1px solid #58a; border-radius:3px; padding:0 3px; margin-right:6px;}
+.tags .new{color:#52cd51; border-color:#52cd51;}
+.tags .hot{color:#f60; border-color:#f60;}
+.tags a{display:inline-block; width:24px; height:24px; background:url("../images/qzone.png")/*tpa=https://www.w4ctech.com/images/qzone.png*/ no-repeat center center; vertical-align:-7px; margin-left:5px;}
+.tags .sina{background:url("../images/sina.png")/*tpa=https://www.w4ctech.com/images/sina.png*/ no-repeat 0 0/100% 100%;}
+.decorate{width:640px; margin:0 auto; height:55px;}
+.decorate i{float:left; width:3px; height:100%; background:#fff; margin-left:40px;}
+.decorate .r{float:right; margin-right:40px; margin-left:0;}
+.pendant{width:100%; margin:0 auto; overflow:hidden;}
+.pendant li{float:left; margin-left:120px; transform-origin:50% 0; -webkit-transform-origin:50% 0; animation:swing 8s infinite; -webkit-animation:swing 8s infinite;}
+.pendant li:hover{animation-play-state:paused;}
+.pendant i{display:block; width:2px; background:#fff; height:50px; margin-left:24px;}
+.pendant .ishare{width:50px; height:50px; border-radius:50%; overflow:hidden; background:#fff;}
+.comment{width:560px; border:40px solid #d4f6f0; border-bottom-width:18px; margin:40px auto 0; border-radius:25px; position:relative; height:144px; background:#d4f6f0;}
+.ctxt{width:100%; height:104px; overflow:hidden;}
+.ctxt textarea{width:96%; height:84px; overflow:hidden; border:none; font:14px/1.5 "微软雅黑"; padding:10px 2%; display:block; resize:none;}
+.publish{position:absolute; bottom:0; right:0; border:none; background:#e3fed0; color:#333; width:90px; height:30px; font:16px/30px "微软雅黑"; cursor:pointer; box-shadow:0 0 5px -1px #ccc;}
+.tip{position:absolute; left:5px; top:-29px; font:16px/1.5 "微软雅黑";}
+.tip span{color:red; font-size:18px; padding:0 3px;}
+.display{width:640px; overflow:hidden; margin:50px auto;}
+.cwrap{width:638px; border:1px solid #666; margin-bottom:20px; background:#fff;}
+.cwrap .nt{width:100%; overflow:hidden; height:32px; background:#f1f1f1; font:16px/32px "微软雅黑";}
+.cwrap .name{float:left; margin-left:10px;}
+.cwrap .time{float:right; margin-right:10px;}
+.cwrap p{padding:10px;}
+
+@keyframes swing{
+  25%{transform:rotate(25deg);}
+  75%{transform:rotate(-25deg);}
+}
+@-webkit-keyframes swing{
+  25%{-webkit-transform:rotate(25deg);}
+  75%{-webkit-transform:rotate(-25deg);}
+}
+@media screen and (max-width:1100px){
+  .wrapper{width:100%;}
+}
+@media screen and (max-width:660px){
+  .imgtxt{width:94%; padding-top:15px;}
+  .image{width:calc(100% - 24px); border:12px solid #fff;}
+  .stn{font-size:16px;}
+  .stn,.platform,.author{width:94%;}
+  .tags{width:auto; left:3%; margin-left:0;}
+  .decorate{width:calc(94% + 24px); height:32px;}
+  .pendant i{margin-left:14px;}
+  .pendant .ishare{width:30px; height:30px;}
+  .pendant li{margin-left:calc(25% - 21px);}
+}
